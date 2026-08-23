@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Suhail Tanweer Tapadar | Cybersecurity</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #05070b;
+  color: #eaf2ff;
+  line-height: 1.7;
+}
+
+.container {
+  width: 92%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background:
+    radial-gradient(circle at top, #063b4d 0%, #07121d 35%, #05070b 70%);
+  padding: 50px 0;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #00eaff;
+  color: #00eaff;
+  padding: 7px 18px;
+  border-radius: 30px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-size: clamp(38px, 8vw, 75px);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h2 {
+  color: #00eaff;
+  font-size: clamp(18px, 4vw, 28px);
+  margin-bottom: 20px;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: auto;
+  color: #b7c5d8;
+  font-size: 17px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px 25px;
+  border: 1px solid #00eaff;
+  border-radius: 8px;
+  color: #00eaff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.btn:hover {
+  background: #00eaff;
+  color: #001018;
+}
+
+section {
+  padding: 75px 0;
+}
+
+.section-title {
+  text-align: center;
+  color: #00eaff;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.card {
+  background: #0b111a;
+  border: 1px solid #182b3d;
+  border-radius: 15px;
+  padding: 28px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 25px rgba(0, 234, 255, .05);
+}
+
+.card h3 {
+  color: #00eaff;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #bdc9d7;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.skill {
+  padding: 18px;
+  text-align: center;
+  background: #0b111a;
+  border: 1px solid #173448;
+  border-radius: 10px;
+  color: #dcecff;
+}
+
+.quote {
+  text-align: center;
+  font-size: 20px;
+  font-style: italic;
+  color: #9fefff;
+  padding: 35px;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.profile div {
+  background: #0b111a;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 3px solid #00eaff;
+}
+
+footer {
+  text-align: center;
+  padding: 35px 15px;
+  background: #030508;
+  color: #738397;
+  font-size: 14px;
+}
+
+.green {
+  color: #39ff88;
+}
+
+@media(max-width:600px) {
+  h1 {
+    font-size: 38px;
+  }
+
+  section {
+    padding: 55px 0;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="container">
+
+    <div class="badge">CYBERSECURITY • AI • TECHNOLOGY</div>
+
+    <h1>SUHAIL TANWEER TAPADAR</h1>
+
+    <h2>Young Cybersecurity Enthusiast</h2>
+
+    <p>
+      Assam, India | 2026
+    </p>
+
+    <p style="margin-top:20px;">
+      Developing practical knowledge in cybersecurity, ethical hacking,
+      networking, cyber defence and information security.
+    </p>
+
+    <a href="#about" class="btn">EXPLORE PROFILE ↓</a>
+
+  </div>
+</header>
+
+<section id="about">
+  <div class="container">
+
+    <h2 class="section-title">ABOUT ME</h2>
+
+    <div class="card">
+      <p>
+        Suhail Tanweer Tapadar is a young cybersecurity enthusiast from
+        Assam who is developing practical knowledge in ethical hacking,
+        cyber defence, networking and information security.
+      </p>
+
+      <p style="margin-top:15px;">
+        His interest in cybersecurity grew through hands-on online learning
+        and practical cybersecurity training environments.
+      </p>
+    </div>
+
+    <div class="quote">
+      “The goal is not simply to learn how to hack —
+      it is to understand technology well enough to protect it.”
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">CYBERSECURITY INTERESTS</h2>
+
+    <div class="skills">
+
+      <div class="skill">🔐 Ethical Hacking</div>
+      <div class="skill">🛡️ Cyber Defence</div>
+      <div class="skill">🌐 Networking</div>
+      <div class="skill">🔎 Digital Security</div>
+      <div class="skill">💻 Web Security</div>
+      <div class="skill">🎯 Penetration Testing</div>
+      <div class="skill">🚨 Security Operations</div>
+      <div class="skill">🧠 Threat Intelligence</div>
+
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">LEARNING JOURNEY</h2>
+
+    <div class="card">
+      <h3>TryHackMe</h3>
+
+      <p>
+        Suhail has explored cybersecurity concepts through practical
+        online training environments. TryHackMe provides interactive
+        cybersecurity labs, challenges and structured learning paths
+        designed to help learners develop practical security knowledge.
+      </p>
+
+      <p style="margin-top:15px;">
+        His learning interests include cybersecurity fundamentals,
+        ethical hacking, networking, web security, penetration testing
+        and defensive security.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">AI & CYBERSECURITY ARTICLES</h2>
+
+    <div class="card">
+      <h3>Coming Soon 🤖</h3>
+
+      <p>
+        AI-based cybersecurity articles, research notes and technology
+        projects will be published here.
+      </p>
+
+      <p style="margin-top:15px;">
+        This section will be updated as new articles and projects are
+        developed.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">CAREER GOAL</h2>
+
+    <div class="card">
+      <h3>Future Cybersecurity Professional</h3>
+
+      <p>
+        The goal is to continue improving technical skills, build practical
+        projects, earn recognised certifications and gain professional
+        experience in the cybersecurity industry.
+      </p>
+
+      <p style="margin-top:15px;">
+        <span class="green">Career Goal:</span>
+        Cybersecurity Professional / Ethical Hacker
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="container">
+
+    <h2 class="section-title">PROFILE</h2>
+
+    <div class="profile">
+
+      <div>
+        <strong>Name</strong><br>
+        Suhail Tanweer Tapadar
+      </div>
+
+      <div>
+        <strong>Location</strong><br>
+        Assam, India
+      </div>
+
+      <div>
+        <strong>Field</strong><br>
+        Cybersecurity & Ethical Hacking
+      </div>
+
+      <div>
+        <strong>Focus</strong><br>
+        Cyber Defence & Security
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Suhail Tanweer Tapadar<br>
+  Cybersecurity • AI • Technology
+</footer>
+
+</body>
+</html>
