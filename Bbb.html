@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Suhail Tanweer Tapadar — a young cybersecurity enthusiast from Assam, India, exploring ethical hacking, cyber defence, networking, web security and information security.">
+
+  <meta name="keywords"
+        content="Suhail Tanweer Tapadar, cybersecurity, ethical hacking, cyber defence, networking, web security, penetration testing, Assam cybersecurity">
+
+  <meta name="author"
+        content="Suhail Tanweer Tapadar">
+
+  <title>Suhail Tanweer Tapadar | Cybersecurity Enthusiast</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #050b18;
+      color: #e7edf7;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0b1427;
+      border-bottom: 1px solid #263244;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      max-width: 1100px;
+      margin: auto;
+      padding: 18px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4fd1ff;
+    }
+
+    nav a {
+      color: #dce7f5;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    nav a:hover {
+      color: #4fd1ff;
+    }
+
+    .hero {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(36px, 8vw, 68px);
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      color: #4fd1ff;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      margin: auto;
+      color: #b9c6d8;
+      font-size: 17px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      border-radius: 8px;
+      background: #087fbe;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #0a9bdc;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    section h2 {
+      color: #4fd1ff;
+      font-size: 30px;
+      margin-bottom: 25px;
+    }
+
+    section p {
+      color: #c3cedc;
+      margin-bottom: 18px;
+    }
+
+    .card {
+      background: #0b1427;
+      border: 1px solid #263244;
+      border-radius: 14px;
+      padding: 28px;
+      margin-top: 25px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+      margin-top: 25px;
+    }
+
+    .skill {
+      background: #101d33;
+      border: 1px solid #263244;
+      border-radius: 10px;
+      padding: 18px;
+      text-align: center;
+      color: #dce7f5;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 14px;
+      border: 1px solid #263244;
+      background: #020713;
+    }
+
+    .image-caption {
+      text-align: center;
+      color: #8fa1b8;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .article {
+      background: #0b1427;
+      border-left: 4px solid #4fd1ff;
+      padding: 25px;
+      border-radius: 10px;
+      margin-top: 25px;
+    }
+
+    .article h3 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    .notice {
+      margin-top: 25px;
+      padding: 18px;
+      background: #111c2f;
+      border: 1px solid #263244;
+      border-radius: 10px;
+      color: #aebbd0;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #030812;
+      border-top: 1px solid #263244;
+      color: #8493a8;
+    }
+
+    @media (max-width: 650px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav a {
+        margin: 0 7px;
+      }
+
+      .hero {
+        padding: 60px 20px;
+      }
+
+      section {
+        padding: 50px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <div class="logo">STT • Cybersecurity</div>
+
+    <div>
+      <a href="#about">About</a>
+      <a href="#learning">Learning</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#article">Article</a>
+    </div>
+  </nav>
+</header>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+  <h1>Suhail Tanweer Tapadar</h1>
+
+  <h2>Cybersecurity Enthusiast</h2>
+
+  <p>
+    A young cybersecurity enthusiast from Assam, India,
+    developing practical knowledge in ethical hacking,
+    cyber defence, networking, web security and
+    information security.
+  </p>
+
+  <a class="button" href="#about">
+    Explore My Journey
+  </a>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <h2>About Me</h2>
+
+  <div class="card">
+
+    <p>
+      <strong>Suhail Tanweer Tapadar</strong> is a young
+      cybersecurity enthusiast from Assam, India.
+      He is interested in understanding how computer
+      systems, networks and web applications work and
+      how they can be protected against security threats.
+    </p>
+
+    <p>
+      His cybersecurity journey focuses on practical
+      learning, responsible experimentation and
+      developing a strong foundation in information
+      security.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- LEARNING -->
+
+<section id="learning">
+
+  <h2>Cybersecurity Learning</h2>
+
+  <div class="article">
+
+    <h3>Learning Through Practical Training</h3>
+
+    <p>
+      Suhail has explored cybersecurity concepts through
+      hands-on online learning environments, including
+      platforms such as TryHackMe.
+    </p>
+
+    <p>
+      Practical cybersecurity laboratories can help
+      learners understand networking, web security,
+      defensive security, penetration testing concepts
+      and common cybersecurity challenges in controlled
+      environments.
+    </p>
+
+  </div>
+
+  <div class="skills">
+
+    <div class="skill">Ethical Hacking</div>
+
+    <div class="skill">Cybersecurity Fundamentals</div>
+
+    <div class="skill">Networking</div>
+
+    <div class="skill">Web Security</div>
+
+    <div class="skill">Penetration Testing</div>
+
+    <div class="skill">Cyber Defence</div>
+
+    <div class="skill">Security Operations</div>
+
+    <div class="skill">Digital Security Awareness</div>
+
+  </div>
+
+</section>
+
+
+<!-- ARTICLE -->
+
+<section id="article">
+
+  <h2>From Student to Future Cybersecurity Professional</h2>
+
+  <div class="card">
+
+    <p>
+      The growing accessibility of cybersecurity education
+      allows students to begin exploring information
+      security at an early stage.
+    </p>
+
+    <p>
+      Suhail's journey represents an interest in learning
+      cybersecurity responsibly and continuously improving
+      technical knowledge.
+    </p>
+
+    <p>
+      His long-term goal is to continue developing his
+      technical skills and build a professional career
+      in the cybersecurity industry.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+  <h2>Cybersecurity Gallery</h2>
+
+  <p>
+    Selected cybersecurity-related images and personal
+    educational materials.
+  </p>
+
+  <div class="gallery">
+
+    <!-- IMAGE 1 -->
+    <div>
+      <img
+        src="IMG_20260823_201338.png"
+        alt="Suhail Tanweer Tapadar cybersecurity educational image">
+      <div class="image-caption">
+        Cybersecurity educational material
+      </div>
+    </div>
+
+
+    <!-- IMAGE 2 -->
+    <div>
+      <img
+        src="IMG_20260823_202939.png"
+        alt="Suhail Tanweer Tapadar cybersecurity license artwork">
+      <div class="image-caption">
+        Personal cybersecurity license artwork
+      </div>
+    </div>
+
+  </div>
+
+  <div class="notice">
+
+    <strong>Educational note:</strong>
+    The cybersecurity license artwork displayed on this
+    page is a personal/educational graphic and should not
+    be interpreted as an official government, professional
+    certification, or authorization issued by a real
+    cybersecurity authority.
+
+  </div>
+
+</section>
+
+
+<!-- JOURNEY -->
+
+<section>
+
+  <h2>My Cybersecurity Interests</h2>
+
+  <div class="card">
+
+    <p>
+      🔐 Ethical hacking and responsible security research
+    </p>
+
+    <p>
+      🌐 Computer networking and network security
+    </p>
+
+    <p>
+      🛡️ Cyber defence and security operations
+    </p>
+
+    <p>
+      💻 Web application security
+    </p>
+
+    <p>
+      🔎 Threat detection and digital security awareness
+    </p>
+
+    <p>
+      📚 Continuous cybersecurity education
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <p>
+    © 2026 Suhail Tanweer Tapadar
+  </p>
+
+  <p>
+    Cybersecurity Enthusiast • Assam, India
+  </p>
+
+</footer>
+
+</body>
+</html>
