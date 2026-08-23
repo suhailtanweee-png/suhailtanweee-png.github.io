@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Suhail Tanweer Tapadar - Cybersecurity articles, security research, vulnerability updates and threat intelligence."
+  >
+
+  <meta
+    name="keywords"
+    content="Cybersecurity, Security Research, Vulnerability, Threat Intelligence, Ethical Hacking"
+  >
+
+  <meta name="author" content="Suhail Tanweer Tapadar">
+
+  <title>
+    Suhail Tanweer Tapadar | Cybersecurity
+  </title>
+
+  <!-- QR CODE LIBRARY -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+  <style>
+
+    /* ==============================
+       GLOBAL
+    ============================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #05080d;
+      color: #eaf2ff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ==============================
+       NAVIGATION
+    ============================== */
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(5, 8, 13, 0.96);
+
+      border-bottom: 1px solid #1b2a38;
+
+      backdrop-filter: blur(10px);
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: auto;
+
+      padding: 16px 20px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #59a6ff;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: #aebdcb;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #59a6ff;
+    }
+
+    /* ==============================
+       HERO
+    ============================== */
+
+    .hero {
+      min-height: 620px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      padding: 80px 20px;
+
+      background:
+        radial-gradient(
+          circle at center,
+          #10253d 0%,
+          #07101a 35%,
+          #05080d 70%
+        );
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .badge {
+      display: inline-block;
+
+      padding: 8px 16px;
+
+      border: 1px solid #245174;
+
+      border-radius: 30px;
+
+      color: #59a6ff;
+
+      background: #091521;
+
+      margin-bottom: 25px;
+
+      font-size: 14px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 8vw, 70px);
+
+      margin-bottom: 15px;
+    }
+
+    .hero h1 span {
+      color: #59a6ff;
+    }
+
+    .hero p {
+      max-width: 700px;
+
+      margin: auto;
+
+      color: #9dafc0;
+
+      font-size: 18px;
+    }
+
+    .hero-buttons {
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-block;
+
+      padding: 13px 22px;
+
+      margin: 6px;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+
+      transition: 0.2s;
+    }
+
+    .primary {
+      background: #1683ff;
+      color: white;
+    }
+
+    .primary:hover {
+      background: #006bd6;
+    }
+
+    .secondary {
+      border: 1px solid #30485d;
+      color: #b9c9d8;
+    }
+
+    .secondary:hover {
+      border-color: #59a6ff;
+      color: #59a6ff;
+    }
+
+    /* ==============================
+       MAIN
+    ============================== */
+
+    main {
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 60px 20px;
+    }
+
+    .section-title {
+      text-align: center;
+
+      margin-bottom: 35px;
+    }
+
+    .section-title h2 {
+      font-size: 32px;
+
+      margin-bottom: 10px;
+    }
+
+    .section-title p {
+      color: #8fa3b6;
+    }
+
+    /* ==============================
+       ARTICLE CARDS
+    ============================== */
+
+    .articles {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+      gap: 20px;
+    }
+
+    .article-card {
+      background: #0a1119;
+
+      border: 1px solid #1c2b3a;
+
+      border-radius: 14px;
+
+      padding: 25px;
+
+      transition: 0.25s;
+    }
+
+    .article-card:hover {
+      transform: translateY(-5px);
+
+      border-color: #347bb8;
+    }
+
+    .article-icon {
+      font-size: 30px;
+
+      margin-bottom: 15px;
+    }
+
+    .article-card h3 {
+      margin-bottom: 10px;
+
+      color: #dcecff;
+    }
+
+    .article-card p {
+      color: #8fa3b6;
+    }
+
+    .read-more {
+      display: inline-block;
+
+      margin-top: 18px;
+
+      color: #59a6ff;
+
+      font-weight: bold;
+    }
+
+    /* ==============================
+       QR SECTION
+    ============================== */
+
+    .qr-section {
+      margin-top: 80px;
+
+      padding: 45px 25px;
+
+      text-align: center;
+
+      background:
+        linear-gradient(
+          145deg,
+          #0b1723,
+          #070c12
+        );
+
+      border: 1px solid #24415a;
+
+      border-radius: 18px;
+
+      box-shadow:
+        0 0 40px rgba(20, 120, 220, 0.08);
+    }
+
+    .qr-section h2 {
+      font-size: 32px;
+
+      margin-bottom: 10px;
+
+      color: #59a6ff;
+    }
+
+    .qr-section > p {
+      max-width: 650px;
+
+      margin: 0 auto 25px;
+
+      color: #9dafc0;
+    }
+
+    .qr-input {
+      width: 100%;
+
+      max-width: 650px;
+
+      padding: 15px;
+
+      background: #05080d;
+
+      border: 1px solid #30485d;
+
+      border-radius: 8px;
+
+      color: white;
+
+      font-size: 16px;
+
+      outline: none;
+    }
+
+    .qr-input:focus {
+      border-color: #59a6ff;
+    }
+
+    .qr-buttons {
+      margin-top: 15px;
+    }
+
+    .qr-button {
+      border: none;
+
+      padding: 13px 20px;
+
+      margin: 5px;
+
+      border-radius: 8px;
+
+      background: #1683ff;
+
+      color: white;
+
+      font-size: 15px;
+
+      font-weight: bold;
+
+      cursor: pointer;
+    }
+
+    .qr-button:hover {
+      background: #006bd6;
+    }
+
+    .download-button {
+      background: #152536;
+
+      border: 1px solid #30485d;
+    }
+
+    .download-button:hover {
+      background: #1d354c;
+    }
+
+    #qrcode {
+      display: none;
+
+      width: fit-content;
+
+      margin: 30px auto 10px;
+
+      padding: 15px;
+
+      background: white;
+
+      border-radius: 12px;
+    }
+
+    .scan-text {
+      display: none;
+
+      color: #8fa3b6;
+
+      margin-top: 10px;
+    }
+
+    /* ==============================
+       ABOUT
+    ============================== */
+
+    .about {
+      margin-top: 80px;
+
+      padding: 35px;
+
+      background: #0a1119;
+
+      border: 1px solid #1c2b3a;
+
+      border-radius: 15px;
+
+      text-align: center;
+    }
+
+    .about h2 {
+      margin-bottom: 15px;
+
+      color: #59a6ff;
+    }
+
+    .about p {
+      max-width: 750px;
+
+      margin: auto;
+
+      color: #9dafc0;
+    }
+
+    /* ==============================
+       FOOTER
+    ============================== */
+
+    footer {
+      margin-top: 60px;
+
+      padding: 35px 20px;
+
+      text-align: center;
+
+      border-top: 1px solid #1b2a38;
+
+      color: #71869a;
+    }
+
+    footer strong {
+      color: #59a6ff;
+    }
+
+    /* ==============================
+       MOBILE
+    ============================== */
+
+    @media (max-width: 650px) {
+
+      .nav-container {
+        flex-direction: column;
+
+        gap: 12px;
+      }
+
+      .nav-links {
+        gap: 12px;
+
+        font-size: 14px;
+      }
+
+      .hero {
+        min-height: 560px;
+      }
+
+      .hero h1 {
+        font-size: 42px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .qr-section {
+        padding: 30px 15px;
+      }
+
+      .about {
+        padding: 25px 18px;
+      }
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- ==============================
+       NAVIGATION
+  ============================== -->
+
+  <nav>
+
+    <div class="nav-container">
+
+      <div class="logo">
+        SUHAIL // CYBERSECURITY
+      </div>
+
+      <ul class="nav-links">
+
+        <li>
+          <a href="#home">Home</a>
+        </li>
+
+        <li>
+          <a href="#articles">Articles</a>
+        </li>
+
+        <li>
+          <a href="#research">Research</a>
+        </li>
+
+        <li>
+          <a href="#qr">QR</a>
+        </li>
+
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ==============================
+       HERO
+  ============================== -->
+
+  <section id="home" class="hero">
+
+    <div class="hero-content">
+
+      <div class="badge">
+        🔐 CYBERSECURITY RESEARCH & INTELLIGENCE
+      </div>
+
+      <h1>
+        Suhail Tanweer
+        <span>Tapadar</span>
+      </h1>
+
+      <p>
+        Professional cybersecurity articles, security research,
+        vulnerability updates, threat intelligence and technical
+        security knowledge.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="#articles"
+          class="button primary"
+        >
+          Explore Articles
+        </a>
+
+        <a
+          href="#qr"
+          class="button secondary"
+        >
+          Scan Website
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <main>
+
+
+    <!-- ==============================
+         ARTICLES
+    ============================== -->
+
+    <section id="articles">
+
+      <div class="section-title">
+
+        <h2>
+          Latest Cybersecurity Articles
+        </h2>
+
+        <p>
+          Security information and research updated regularly.
+        </p>
+
+      </div>
+
+
+      <div class="articles">
+
+
+        <article class="article-card">
+
+          <div class="article-icon">
+            🛡️
+          </div>
+
+          <h3>
+            Vulnerability Updates
+          </h3>
+
+          <p>
+            Analysis of newly discovered vulnerabilities,
+            security weaknesses and defensive recommendations.
+          </p>
+
+          <a
+            href="#"
+            class="read-more"
+          >
+            Read Article →
+          </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+          <div class="article-icon">
+            ⚠️
+          </div>
+
+          <h3>
+            Threat Intelligence
+          </h3>
+
+          <p>
+            Information about current cyber threats,
+            attack techniques and methods for improving
+            security awareness.
+          </p>
+
+          <a
+            href="#"
+            class="read-more"
+          >
+            Read Article →
+          </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+          <div class="article-icon">
+            🔎
+          </div>
+
+          <h3>
+            Security Research
+          </h3>
+
+          <p>
+            Technical research, security analysis,
+            defensive techniques and cybersecurity findings.
+          </p>
+
+          <a
+            href="#"
+            class="read-more"
+          >
+            Read Research →
+          </a>
+
+        </article>
+
+
+        <article class="article-card">
+
+          <div class="article-icon">
+            💻
+          </div>
+
+          <h3>
+            Ethical Security
+          </h3>
+
+          <p>
+            Educational cybersecurity content focused on
+            responsible security testing and defense.
+          </p>
+
+          <a
+            href="#"
+            class="read-more"
+          >
+            Learn More →
+          </a>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ==============================
+         RESEARCH
+    ============================== -->
+
+    <section id="research" class="about">
+
+      <h2>
+        Cybersecurity Research
+      </h2>
+
+      <p>
+        This platform is dedicated to publishing professional
+        cybersecurity knowledge, security research, vulnerability
+        information, threat intelligence and regularly updated
+        technical articles.
+      </p>
+
+    </section>
+
+
+    <!-- ==============================
+         QR GENERATOR
+    ============================== -->
+
+    <section id="qr" class="qr-section">
+
+      <h2>
+        🔐 Scan My Cybersecurity Website
+      </h2>
+
+      <p>
+        Scan the QR code with your phone to directly access
+        this cybersecurity website. You can also enter another
+        URL and generate a new QR code.
+      </p>
+
+
+      <input
+        id="qr-url"
+        class="qr-input"
+        type="url"
+        value="https://suhailtanweee-png.github.io/"
+        placeholder="Enter website URL"
+      >
+
+
+      <div class="qr-buttons">
+
+        <button
+          class="qr-button"
+          onclick="generateQR()"
+        >
+          Generate QR
+        </button>
+
+
+        <button
+          class="qr-button download-button"
+          onclick="downloadQR()"
+        >
+          Download QR
+        </button>
+
+      </div>
+
+
+      <div id="qrcode"></div>
+
+
+      <p
+        id="scan-text"
+        class="scan-text"
+      >
+        📱 Scan this QR code with your phone camera.
+      </p>
+
+    </section>
+
+
+    <!-- ==============================
+         ABOUT
+    ============================== -->
+
+    <section id="about" class="about">
+
+      <h2>
+        About This Website
+      </h2>
+
+      <p>
+        Welcome to my professional cybersecurity platform.
+        Here I share cybersecurity articles, security research,
+        vulnerability updates, threat intelligence and technical
+        information to promote better cybersecurity awareness.
+      </p>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ==============================
+       FOOTER
+  ============================== -->
+
+  <footer>
+
+    <p>
+      © 2026
+      <strong>
+        Suhail Tanweer Tapadar
+      </strong>
+    </p>
+
+    <p>
+      Cybersecurity Research & Articles
+    </p>
+
+  </footer>
+
+
+  <!-- ==============================
+       QR JAVASCRIPT
+  ============================== -->
+
+  <script>
+
+    function generateQR() {
+
+      const url =
+        document
+          .getElementById("qr-url")
+          .value
+          .trim();
+
+      const qrContainer =
+        document.getElementById("qrcode");
+
+      const scanText =
+        document.getElementById("scan-text");
+
+
+      if (!url) {
+
+        alert(
+          "Please enter a website URL."
+        );
+
+        return;
+      }
+
+
+      /*
+        Clear previous QR code
+      */
+
+      qrContainer.innerHTML = "";
+
+
+      /*
+        Display QR container
+      */
+
+      qrContainer.style.display = "block";
+
+      scanText.style.display = "block";
+
+
+      /*
+        Generate QR code
+      */
+
+      new QRCode(
+        qrContainer,
+        {
+          text: url,
+
+          width: 240,
+
+          height: 240,
+
+          correctLevel:
+            QRCode.CorrectLevel.H
+        }
+      );
+
+    }
+
+
+    function downloadQR() {
+
+      const canvas =
+        document.querySelector(
+          "#qrcode canvas"
+        );
+
+
+      if (!canvas) {
+
+        alert(
+          "Please generate the QR code first."
+        );
+
+        return;
+      }
+
+
+      /*
+        Create download link
+      */
+
+      const link =
+        document.createElement("a");
+
+
+      link.download =
+        "suhail-cybersecurity-website-qr.png";
+
+
+      link.href =
+        canvas.toDataURL(
+          "image/png"
+        );
+
+
+      link.click();
+
+    }
+
+
+    /*
+      Automatically generate
+      your website QR when page loads.
+    */
+
+    window.addEventListener(
+      "load",
+      function() {
+
+        generateQR();
+
+      }
+    );
+
+  </script>
+
+
+</body>
+</html>
